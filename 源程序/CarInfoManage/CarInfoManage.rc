@@ -1,0 +1,235 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CarInfoManage.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CarInfoManage.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CARINFOMANAGE_DIALOG DIALOGEX 0, 0, 427, 328
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "车型管理程序"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,27,285,50,14
+    PUSHBUTTON      "退出",IDCANCEL,239,307,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON1,186,285,50,14
+    EDITTEXT        IDC_EDIT1,56,244,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,55,265,49,14,ES_AUTOHSCROLL
+    LTEXT           "车牌颜色",IDC_STATIC1,24,267,28,8
+    LTEXT           "0",IDC_STATION_NUM,272,246,58,8
+    LTEXT           "负面车",IDC_STATIC4,127,267,22,8
+    LTEXT           "车道号：",IDC_STATIC6,238,267,28,8
+    LTEXT           "收费站：",IDC_STATIC5,240,246,28,8
+    LTEXT           "车牌号码",IDC_STATIC2,25,246,28,8
+    LTEXT           "0",IDC_RODE_NUM,271,267,29,8
+    LTEXT           "车辆类型",IDC_STATIC3,123,246,28,8
+    PUSHBUTTON      "修改",IDC_BUTTON2,112,285,50,14
+    GROUPBOX        "编辑",IDC_STATIC,10,230,402,73
+    GROUPBOX        "查询",IDC_STATIC,10,183,402,41
+    PUSHBUTTON      "查询",IDC_BUTTON3,295,198,27,14
+    LTEXT           "车牌号码",IDC_STATIC,20,200,28,8
+    EDITTEXT        IDC_EDIT4,52,198,40,14,ES_AUTOHSCROLL
+    LTEXT           "开始时间",IDC_STATIC,102,200,28,8
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,137,198,50,15
+    LTEXT           "结束时间",IDC_STATIC,195,200,28,8
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,230,198,54,15
+    PUSHBUTTON      "连接数据库",IDC_BUTTON4,43,307,50,14
+    CONTROL         "",IDC_LIST_DATA,"SysListView32",LVS_REPORT | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,15,392,150
+    COMBOBOX        IDC_EDIT3,158,265,48,64,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,158,244,48,81,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空编辑框",IDC_BUTTON5,259,286,50,14
+    GROUPBOX        "静态",IDC_STATIC,11,7,402,173
+    LTEXT           "静态",IDC_STATIC_RECCOUNT,202,168,147,8,0,WS_EX_RIGHT
+    PUSHBUTTON      "下一页",IDC_BTN_NEXT,380,165,24,14
+    PUSHBUTTON      "上一页",IDC_BTN_LAST,352,165,24,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", " <石家庄域联视控科技有限公司>"
+            VALUE "FileDescription", " <车辆数据库管理程序>"
+            VALUE "FileVersion", "1.0.0"
+            VALUE "InternalName", "CarInfoManage.exe"
+            VALUE "LegalCopyright", "(C) <石家庄域联视控科技有限公司>。保留所有权利。"
+            VALUE "OriginalFilename", "CarInfoManage.exe"
+            VALUE "ProductName", " <车辆数据库管理程序>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CARINFOMANAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 420
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 321
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CARINFOMANAGE_DIALOG DLGINIT
+BEGIN
+    IDC_EDIT3, 0x403, 6, 0
+0x2d30, 0xb72d, 0x00f1, 
+    IDC_EDIT3, 0x403, 6, 0
+0x2d31, 0xca2d, 0x00c7, 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d31, 0xbf2d, 0x31cd, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d32, 0xbf2d, 0x32cd, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d33, 0xbf2d, 0x33cd, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d34, 0xbf2d, 0x34cd, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d35, 0xbb2d, 0x31f5, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d36, 0xbb2d, 0x32f5, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d37, 0xbb2d, 0x33f5, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d38, 0xbb2d, 0x34f5, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0x2d39, 0xbb2d, 0x35f5, "\000" 
+    0
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CarInfoManage.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
